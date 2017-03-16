@@ -25,7 +25,7 @@ spring:
     jackson:
         serialization.indent_output: true
     datasource:
-       url: jdbc:mysql://localhost:3306/besquare_oauth?zeroDateTimeBehavior=convertToNull
+       url: jdbc:mysql://localhost:3306/jhipster_sample?zeroDateTimeBehavior=convertToNull
        name:
        username: root
        password: root
@@ -48,7 +48,7 @@ spring:
             hibernate.generate_statistics: true
             hibernate.javax.cache.provider: org.ehcache.jsr107.EhcacheCachingProvider
             hibernate.javax.cache.uri: ${spring.cache.jcache.config}
-            hibernate.cache.region.factory_class: io.github.jhipster.config.jcache.SpringCacheRegionFactory
+            hibernate.cache.region.factory_class: io.github.jhipster.config.jcache.NoDefaultJCacheRegionFactory
     mail:
         host: localhost
         port: 25
@@ -80,7 +80,7 @@ liquibase:
 #        keyAlias: jhipsterSampleApplication
 # ===================================================================
 server:
-    port: 8085
+    port: 9090
 
 # ===================================================================
 # JHipster specific properties
